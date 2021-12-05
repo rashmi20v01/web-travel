@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/templatemo-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">La Voyage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/cabs">Cabs</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/hotel">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-warning mx-2" ><a href="/login" style=" color:black">Login</a></button>
+          <button class="btn btn-outline-warning mx-2" ><a href="/" style=" color:black;">SignUp</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    {{#if user}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+   Welcome {{ user}}!
+   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+  <div class="container">
+    <section id="video-container" >
+    <div class="video-overlay"></div>
+    <div class="video-content">
+        <div class="inner">
+            <span>Video Presentation</span>
+            <a href="http://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
+        </div>
+    </div>
+    <video autoplay="" loop="" muted style="width:100%;">
+      <source src="/img/highway-loop.mp4" type="video/mp4" />
+    </video>
+</section>
+  <div class="row">
+    <div class="col">
+  <div class="card my-3" style="width: 18rem;" >
+    <img src="/img/delhi.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Delhi</h5>
+      <p class="card-text">Delhi is a city, union territory and capital of India.</p>
+      <a href="/delhi" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+  <div class="card my-3" style="width: 18rem;" >
+    <img src="/img/singapore.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Singapore</h5>
+      <p class="card-text">Singapore is a sovereign island city-state in maritime Southeast Asia.</p>
+      <a href="/singapore" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card my-3" style="width: 18rem;" >
+    <img src="/img/switzerland.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Switzerland</h5>
+      <p class="card-text">Switzerland is a country at the confluence of Western,Central and Southern Europe.</p>
+      <a href="/switzerland" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background-color: black; color:white">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Useful Links</h5>
+        <ul>
+          <li><a href="https://www.makemytrip.com/" >Make my trip</a></li>
+          <li><a href="https://www.goibibo.com/" >Goibibo</a></li>
+          <li><a href="https://www.tripadvisor.in/" >Trip Advisor</a></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <ul>
+          <li>Mobile: 9443502117</li>
+          <li>Address:BH Road,Jayanagara,Nelamangala Town, Bangalore 562123</li>
+          <li>Email:lavoyage@gmail.com</li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">La Voyage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/cabs">Cabs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/hotel">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+          <button class="btn btn-outline-warning mx-2" ><a href="/login" style="text-decoration: none; color:black">Login</a></button>
+          <button class="btn btn-outline-warning mx-2" ><a href="/" style="text-decoration: none; color:black;">SignUp</a></button>
+      </div>
+    </div>
+  </nav>
+<div >
+   {{#if conf}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{conf}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+  {{/if}}
+  <img src="https://purewows3.imgix.net/images/articles/2019_04/most-beautiful-places-in-the-world-Seljalandsfoss__Iceland.png?auto=format,compress&cs=strip" style="z-index: -1; width:100%; opacity:0.8; position:absolute; left: 0px; top: 0px; height:600px" >
+  <form class="d-flex" method="post" action="/findcab" style="margin-top: 12%; margin-left:10%">
+          <input class="form-control me-2" type="text" placeholder="Pick up" aria-label="Search" name="search" style="width: 30%;" >
+           <input type="text" class="form-control" placeholder="Destination" style="width: 30%;" name="destination">
+          <button class="btn btn-success mx-2" type="submit">Search</button>
+  </form>
+</div>
+  </body>
+</html>
