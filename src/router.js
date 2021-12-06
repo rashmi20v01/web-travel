@@ -1,5 +1,6 @@
 const express=require('express');
-var messagebird=require('messagebird')('l9G6x3pvUELzZNhpEYId8EsTA')
+const API_KEY=""
+var messagebird=require('messagebird')(API_KEY)
 const router=express.Router();
 const Register=require('../model/sign')
 const Cab=require('../model/cab')
